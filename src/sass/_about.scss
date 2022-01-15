@@ -1,0 +1,22 @@
+.about {
+  padding-top: 125px;
+  padding-bottom: 40px;
+}
+.about__subtitle {
+  color: var(--accent-secondary);
+  margin-bottom: 15px;
+}
+.about__title {
+  color: var(--accent-primary);
+  margin-bottom: 26px;
+}
+.about__main-text {
+  @include font (12px,1.62,0.64,500);
+  color: var(--text-dark);
+  margin-bottom: 35px;
+}
+.about__description-text {
+  @include font (12px,1.62,0.64,500);
+  color: var(--text-light);
+  margin-bottom: 20px;
+}
