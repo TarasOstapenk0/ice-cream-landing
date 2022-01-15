@@ -1,3 +1,92 @@
 .hero-section {
+  background-color: var(--bg-hero-prod);
+  height: 502px;
+  overflow: hidden;
+  position: relative;
+}
+
+.hero-circle {
+  width: 346px;
+  height: 344px;
+  border-radius: 50%;
   background-color: var(--accent-secondary);
+  position: absolute;
+  bottom: 75px;
+  left: 36px;
+}
+
+.hero-ice-cream-img {
+  position: absolute;
+  bottom: 0;
+  left: 117px;
+}
+
+.hero-wrap {
+  position: absolute;
+  left: 20px;
+  bottom: 160px;
+}
+
+.hero-wrap__title {
+  font-family: 'Titan One';
+  @include font(26px, 1.15, 0.04em, 400);
+  color: var(--white-color);
+  text-transform: uppercase;
+
+  margin-bottom: 19px;
+}
+
+.hero-wrap__title-accent {
+  font-family: 'Titan One';
+  @include font(48px, 0.95, 0.04em, 400);
+  color: var(--accent-primary);
+  text-transform: uppercase;
+}
+
+.hero-links {
+  display: flex;
+}
+
+.hero-links__product-link {
+  @include font(8px, 1.25, 0.04em, 400);
+
+  display: flex;
+  align-items: center;
+  justify-content: center;
+
+  width: 62px;
+  height: 24px;
+
+  color: var(--white-color);
+  background-color: var(--accent-primary);
+  border-radius: 20px;
+}
+
+.hero-links__how-link {
+  @include font(8px, 1.25, 0.04em, 400);
+
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  margin-left: 8px;
+
+  width: 83px;
+  height: 24px;
+
+  color: var(--accent-primary);
+  background-color: var(--white-color);
+  border-radius: 20px;
+}
+
+.hero-features {
+  display: none;
+  @media screen and (min-width: 768px) {
+    display: block;
+  }
+}
+
+.hero-features-numbers {
+  position: absolute;
+  right: 34px;
+  top: 94px;
 }
