@@ -1,0 +1,26 @@
+:root {
+  --accent-primary: #d41443;
+  --accent-secondary: #ffa5ba;
+  --accent-yellow: #f0d1a5;
+  --accent-green: #c2e297;
+
+  --white-color: #ffffff;
+  --text-dark: #000000;
+  --text-light: #907e82;
+
+  --slider-primary: #d31342;
+  --slider-secondary: #c7133e;
+
+  --clients-light: #d9d9d9;
+  --clients-lighter: #e1e1e1;
+
+  --bg-menu: #e17992;
+  --bg-socials: #fea5bb;
+  --bg-products: #ffb8ca;
+  --bg-secondary: #fff5f6;
+  --bg-clients: #fafafa;
+
+  --transition-time: 250ms;
+  --cubic-bezier: cubic-bezier(0.4, 0, 0.2, 1);
+  --animation: var(--transition-time) cubic-bezier(0.4, 0, 0.2, 1);
+}
