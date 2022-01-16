@@ -24,6 +24,10 @@
 }
 
 .contact-title {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+
   width: 73px;
   height: 28px;
 
@@ -34,6 +38,16 @@
 
   color: #ffffff;
 }
+.contact-title_heading {
+  width: 138px;
+  height: 28px;
+  text-align: center;
+  margin-bottom: 32px;
+  background: #c2e297;
+  border-radius: 6px;
+  color: #ffffff;
+}
+
 .contact-location {
   margin-bottom: 10px;
 
@@ -50,15 +64,19 @@
 
 .contact-text {
   //   margin-bottom: 32px;
-  margin-bottom: 64px;
-  width: 243px;
-  height: 50px;
+  display: block;
+  //   margin-bottom: 64px;
+  padding-bottom: 32px;
+  width: 244px;
+
   font-family: DM Sans;
   font-style: normal;
   font-weight: 500;
   font-size: 16px;
   line-height: 1.14;
   letter-spacing: 0.04em;
+
+  border-bottom: 1px solid #e1e1e1;
 
   color: #907e82;
 
@@ -71,6 +89,7 @@
 
 .contact-date-time {
   height: 30px;
+
   font-family: DM Sans;
   font-style: normal;
   font-weight: 500;
@@ -84,6 +103,9 @@
 .contact-date-day {
   height: 30px;
   margin-bottom: 15px;
+
+  margin-top: -2px;
+
   font-family: DM Sans;
   font-style: normal;
   font-weight: 500;
@@ -93,25 +115,48 @@
   color: #ffa5ba;
 }
 .contact-date {
-  margin-bottom: 64px;
+  margin-top: 32px;
+  margin-bottom: 32px;
 }
-.contact-tel {
-  font-family: DM Sans;
-  font-style: normal;
-  font-weight: 500;
-  font-size: 16px;
-  line-height: 1.14;
+.contact-link {
+  //   width: 243px;
+  //   height: 50px;
+
+  //   font-family: DM Sans;
+  //   font-style: normal;
+  //   font-weight: 500;
+  //   font-size: 16px;
+  //   line-height: 1.14%;
+  /* or 29px */
 
   color: #907e82;
+
+  //   font-family: DM Sans;
+  //   font-style: normal;
+  //   font-weight: 500;
+  //   font-size: 16px;
+  //   line-height: 1.14;
+
+  //   color: #907e82;
 }
-.contact-mail {
-  font-family: DM Sans;
-  font-style: normal;
-  font-weight: 500;
-  font-size: 16px;
-  line-height: 1.14;
+
+.contact-adress {
+  border-top: 1px solid #e1e1e1;
+  padding-top: 32px;
+}
+
+.contact-adress_tel {
+  margin-bottom: 10px;
+}
+
+.contact-link {
+  width: 243px;
+  height: 50px;
+
+  @include font(16px, 1.14, 0, 500);
 
   color: #907e82;
+  margin-top: 20px;
 }
 
 .contact-btn {
@@ -139,6 +184,7 @@
   background: #d41342;
   color: #ffffff;
   border-radius: 22px;
+  border: none;
 
   transition: background-color var(--animation-duration) var(--timing-function);
 }
@@ -156,6 +202,7 @@
   background: #ffffff;
   color: #d41443;
   border-radius: 22px;
+  border: none;
   transition: background-color var(--animation-duration) var(--timing-function);
 
   display: block;
