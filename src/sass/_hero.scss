@@ -57,6 +57,17 @@
   border-radius: 50%;
   background-color: var(--accent-secondary);
 
+  animation: fadeInAnimation ease 3s;
+
+  @keyframes fadeInAnimation {
+    0% {
+      transform: translateY(50%);
+    }
+    100% {
+      transform: translateY(0);
+    }
+  }
+
   @media screen and (min-width: 768px) {
     bottom: 46px;
     left: 307px;
@@ -78,6 +89,19 @@
   position: absolute;
   bottom: 0;
   left: 117px;
+
+  animation: fadeInAnimation ease 2s;
+
+  @keyframes fadeInAnimation {
+    0% {
+      transform: translateY(40%);
+      opacity: 0.2;
+    }
+    100% {
+      transform: translateY(0);
+      opacity: 1;
+    }
+  }
 
   @media screen and (min-width: 768px) {
     left: 378px;
@@ -147,7 +171,7 @@
 
 .hero-links__product-link,
 .hero-links__how-link {
-  @include font(8px, 1.25, 0.04em, 400);
+  @include font(8px, 1.25, 0, 400);
 
   display: flex;
   align-items: center;
@@ -167,6 +191,12 @@
 
   color: var(--white-color);
   background-color: var(--accent-primary);
+  transition: background-color var(--animation);
+
+  &:hover,
+  &:focus {
+    background-color: var(--hover-button-dark);
+  }
 
   @media screen and (min-width: 1280px) {
     width: 104px;
@@ -179,6 +209,12 @@
 
   color: var(--accent-primary);
   background-color: var(--white-color);
+  transition: background-color var(--animation);
+
+  &:hover,
+  &:focus {
+    background-color: var(--hover-button-light);
+  }
 
   @media screen and (min-width: 1280px) {
     width: 138px;
@@ -211,7 +247,6 @@
   right: -10px;
   top: -2px;
 
-  z-index: 1;
   display: block;
   width: 16px;
   height: 16px;
@@ -252,9 +287,9 @@
 }
 
 .hero-features-numbers__number {
-  position: absolute;
-  z-index: 2;
-  right: 0;
+  position: relative;
+
+  text-align: right;
 
   font-family: 'Titan One';
   @include font(28px, 1.14, 0.04em, 400);
@@ -269,7 +304,6 @@
 }
 
 .hero-features-numbers__text {
-  padding-top: 32px;
   text-align: right;
 
   @include font(8px, 1.25, 0, 400);
@@ -278,7 +312,6 @@
 
   @media screen and (min-width: 1280px) {
     @include font(14px, 1.28, 0, 400);
-    padding-top: 55px;
   }
 }
 
@@ -288,6 +321,17 @@
   left: 34px;
 
   display: flex;
+
+  animation: fadeInAnimationInfo ease 1.8s;
+
+  @keyframes fadeInAnimationInfo {
+    0% {
+      transform: translateX(-50px);
+    }
+    100% {
+      transform: translateX(0);
+    }
+  }
 
   @media screen and (min-width: 1280px) {
     left: 77px;
@@ -325,6 +369,17 @@
   position: absolute;
   bottom: 0;
   right: 34px;
+
+  animation: fadeInAnimationpic ease 1.5s;
+
+  @keyframes fadeInAnimationpic {
+    0% {
+      transform: translateX(50px);
+    }
+    100% {
+      transform: translateX(0);
+    }
+  }
 
   @media screen and (min-width: 1280px) {
     right: 109px;
