@@ -1,12 +1,22 @@
 .section-contact {
   background: #fff5f6;
+  width: 1280px;
+}
+.container {
+  display: flex;
+  justify-content: center;
+
+  width: 100%;
 }
 
-.container {
+.container-contact {
   width: 330px;
   height: 572px;
-  left: 115px;
-  top: 4056px;
+  margin-left: 30px;
+
+  padding-top: 51px;
+  padding-left: 43px;
+  padding-bottom: 62px;
 
   background: #ffffff;
   box-shadow: 0px 8px 30px rgba(212, 20, 67, 0.1);
@@ -16,10 +26,119 @@
 .title-contact {
   width: 73px;
   height: 28px;
-  // left: 158px;
-  // top: 4107px;
 
   background: #f0d1a5;
   border-radius: 6px;
   text-align: center;
+  margin-bottom: 32px;
+
+  color: #ffffff;
+}
+.contact-location {
+  margin-bottom: 10px;
+
+  font-family: DM Sans;
+  font-style: normal;
+  font-weight: 500;
+  font-size: 16px;
+  line-height: 1.16;
+
+  letter-spacing: 0.04em;
+
+  color: #000000;
+}
+.contact-text {
+  //   margin-bottom: 32px;
+  margin-bottom: 64px;
+  width: 243px;
+  height: 50px;
+  font-family: DM Sans;
+  font-style: normal;
+  font-weight: 500;
+  font-size: 16px;
+  line-height: 1.14;
+  letter-spacing: 0.04em;
+
+  color: #907e82;
+
+  border: 1px solid #e1e1e1;
+  width: 234px;
+}
+// .contact-date {
+//   margin-top: 64px;
+// }
+
+.contact-date-time {
+  height: 30px;
+  font-family: DM Sans;
+  font-style: normal;
+  font-weight: 500;
+  font-size: 16px;
+  line-height: 1.16;
+
+  letter-spacing: 0.04em;
+
+  color: #000000;
+}
+.contact-date-day {
+  height: 30px;
+  margin-bottom: 15px;
+  font-family: DM Sans;
+  font-style: normal;
+  font-weight: 500;
+  font-size: 16px;
+  line-height: 1.16%;
+
+  color: #ffa5ba;
+}
+.contact-btn {
+  display: flex;
+  justify-content: center;
+
+  margin-top: 86px;
+}
+.contact-btn_main {
+  margin-right: auto;
+  margin-left: auto;
+}
+
+.contact-btn_location {
+  font-family: DM Sans;
+  font-style: normal;
+  font-weight: bold;
+  font-size: 16px;
+  line-height: 21px;
+  width: 198px;
+  height: 44px;
+  cursor: pointer;
+  margin-left: 15px;
+  display: block;
+  background: #d41342;
+  color: #ffffff;
+  border-radius: 22px;
+
+  transition: background-color var(--animation-duration) var(--timing-function);
+}
+.contact-btn_ranchize {
+  font-family: DM Sans;
+  font-style: normal;
+  font-weight: bold;
+  font-size: 16px;
+  line-height: 21px;
+  width: 198px;
+  height: 44px;
+  cursor: pointer;
+  margin-left: 15px;
+
+  background: #ffffff;
+  color: #d41443;
+  border-radius: 22px;
+  transition: background-color var(--animation-duration) var(--timing-function);
+
+  display: block;
+
+  //   &:hover,
+  //   &:focus {
+  //     background-color: var(--accent-btn-color);
+  //   }
 }
