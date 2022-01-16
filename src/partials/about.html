@@ -3,26 +3,42 @@
   <div class="container about__container">
     <p class="subtitle about__subtitle">tradition and love</p>
     <h2 class="title about__title">how it’s made?</h2>
+
     <picture>
       <source
-        srcset="./images/about/about-desk-cow-1x.png 1x, ./images/about/about-desk-cow-1x.png 2x"
+        srcset="./images/about/about-desk-cow-1x.png 1x, ./images/about/about-desk-cow-2x.png 2x"
         media="(min-width: 1280px)"
       />
+      <source
+        srcset="./images/about/about-tab-cow-1x.png 1x, ./images/about/about-tab-cow-2x.png 2x"
+        media="(min-width:768px)"
+      />
+      <source
+        srcset="./images/about/about-mob-cow-1x.png 1x, ./images/about/about-mob-cow-2x.png 2x"
+        media="(min-width:320px)"
+      />
+      <img
+        class="about__picture"
+        src="./images/about/about-desk-cow-1x.png"
+        alt="a jug of milk and a cow"
+      />
     </picture>
-    <div class="about__text">
-      <p class="about__main-text">
-        Fusce ut velit laoreet, tempus arcu eu, molestie tortor. Nam vel justo cursus, faucibus
-        lorem eget, egestas eros. Maecenas eleifend erat at justo fringilla.
-      </p>
-      <p class="about__description-text about__description-text--first">
-        Curabitur lacinia enim at ex blandit, vel pellentesque odio elementum. Mauris rhoncus orci
-        in imperdiet placerat. Vestibulum euismod nisl suscipit ligula volutpat, a feugiat urna
-        maximus. Cras massa nibh, tincidunt.
-      </p>
-      <p class="about__description-text about__description-text--second">
-        Aliquam erat volutpat. Aenean accumsan.
-      </p>
+    <div class="about__description">
+      <div class="about__text">
+        <p class="about__main-text">
+          Fusce ut velit laoreet, tempus arcu eu, molestie tortor. Nam vel justo cursus, faucibus
+          lorem eget, egestas eros. Maecenas eleifend erat at justo fringilla.
+        </p>
+        <p class="about__description-text about__description-text--first">
+          Curabitur lacinia enim at ex blandit, vel pellentesque odio elementum. Mauris rhoncus orci
+          in imperdiet placerat. Vestibulum euismod nisl suscipit ligula volutpat, a feugiat urna
+          maximus. Cras massa nibh, tincidunt.
+        </p>
+        <p class="about__description-text about__description-text--second">
+          Aliquam erat volutpat. Aenean accumsan.
+        </p>
+      </div>
+      <button class="about__button" type="button">Read more</button>
     </div>
-    <button class="about__button" type="button">Read more</button>
   </div>
 </section>
