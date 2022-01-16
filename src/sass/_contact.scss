@@ -1,5 +1,5 @@
 .section-contact {
-  background-color: #fff5f6;
+  background-color: var(--bg-secondary);
   width: 1280px;
 }
 .container {
@@ -31,12 +31,12 @@
   width: 73px;
   height: 28px;
 
-  background: #f0d1a5;
+  background: var(--accent-yellow);
   border-radius: 6px;
   text-align: center;
   margin-bottom: 32px;
 
-  color: #ffffff;
+  color: var(--white-color);
 }
 .contact-title_heading {
   display: flex;
@@ -46,16 +46,16 @@
   height: 28px;
   text-align: center;
   margin-bottom: 32px;
-  background: #c2e297;
+  background: var(--accent-green);
   border-radius: 6px;
-  color: #ffffff;
+  color: var(--white-color);
 }
 
 .contact-location {
   margin-bottom: 10px;
   @include font(16px, 1.16, 0.04, 500);
 
-  color: #000000;
+  color: var(--text-dark);
 }
 
 .contact-text {
@@ -63,15 +63,15 @@
   padding-bottom: 32px;
   width: 244px;
   @include font(16px, 1.14, 0.04, 500);
-  color: #907e82;
+  color: var(--text-light);
 
-  border-bottom: 1px solid #e1e1e1;
+  border-bottom: 1px solid var(--contact-border);
 }
 
 .contact-date-time {
   height: 30px;
   @include font(16px, 1.16, 0.04, 500);
-  color: #000000;
+  color: var(--text-dark);
 }
 .contact-date-day {
   height: 30px;
@@ -80,7 +80,7 @@
   margin-top: -2px;
   @include font(16px, 1.16, 0, 500);
 
-  color: #ffa5ba;
+  color: var(--accent-secondary);
 }
 .contact-date {
   margin-top: 32px;
@@ -88,7 +88,7 @@
 }
 
 .contact-adress {
-  border-top: 1px solid #e1e1e1;
+  border-top: 1px solid var(--contact-border);
   padding-top: 32px;
 }
 
@@ -102,7 +102,7 @@
 
   @include font(16px, 1.14, 0, 500);
 
-  color: #907e82;
+  color: var(--text-light);
   margin-top: 20px;
 }
 
@@ -118,36 +118,29 @@
 }
 
 .contact-btn_location {
-  font-family: DM Sans;
-  font-style: normal;
-  font-weight: bold;
-  font-size: 16px;
-  line-height: 21px;
+  @include font(16px, 1.31, 0, 700);
+
   width: 198px;
   height: 44px;
   cursor: pointer;
   margin-left: 15px;
   display: block;
-  background: #d41342;
-  color: #ffffff;
+  background: var(--button-contact);
+  color: var(--white-color);
   border-radius: 22px;
   border: none;
 
   transition: background-color var(--animation-duration) var(--timing-function);
 }
 .contact-btn_ranchize {
-  font-family: DM Sans;
-  font-style: normal;
-  font-weight: bold;
-  font-size: 16px;
-  line-height: 21px;
+  @include font(16px, 1.31, 0, 700);
   width: 198px;
   height: 44px;
   cursor: pointer;
   margin-left: 15px;
 
-  background: #ffffff;
-  color: #d41443;
+  background: var(--white-color);
+  color: var(--accent-primary);
   border-radius: 22px;
   border: none;
   transition: background-color var(--animation-duration) var(--timing-function);
