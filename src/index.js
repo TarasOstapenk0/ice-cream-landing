@@ -1,3 +1,4 @@
 import './sass/main.scss';
-import './js/arrow';
-import './js/buynow';
+import './js/arrow.js';
+import './js/buynow.js';
+import './js/franchise.js';
