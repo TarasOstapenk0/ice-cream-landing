@@ -15,14 +15,15 @@
 }
 
 .contact-shift {
-  margin-top: -84px;
+  transform: translateY(-84px);
   @media screen and (min-width: 768px) {
-    margin-top: -78px;
+    transform: translateY(-78px);
   }
   @media screen and (min-width: 1280px) {
-    margin-top: -102px;
+    transform: translateY(-102px);
   }
 }
+
 .contact-wrap {
   display: flex;
   flex-direction: row;
@@ -132,6 +133,8 @@
 }
 
 .contact-location {
+  color: var(--text-dark);
+
   @media screen and (max-width: 767px) {
     @include font(16px, 1.12, 0.04, 500);
     margin-bottom: 10px;
@@ -144,7 +147,6 @@
     @include font(16px, 1.16, 0.04, 500);
     margin-bottom: 10px;
   }
-  color: var(--text-dark);
 }
 
 .contact-text {
@@ -307,6 +309,12 @@
 // }
 
 .contact-btn_location {
+  cursor: pointer;
+  background: var(--button-contact);
+  color: var(--white-color);
+  border-radius: 22px;
+  border: none;
+
   @media screen and (max-width: 767px) {
     width: 161px;
     height: 44px;
@@ -325,15 +333,20 @@
     height: 44px;
     display: block;
   }
-  cursor: pointer;
-  background: var(--button-contact);
-  color: var(--white-color);
+}
+.contact-btn_franchize {
+  background: var(--white-color);
+  color: var(--accent-primary);
   border-radius: 22px;
   border: none;
-
   transition: background-color var(--animation-duration) var(--timing-function);
-}
-.contact-btn_ranchize {
+  display: block;
+
+  &:hover,
+  &:focus {
+    background-color: var(--hover-button-light);
+  }
+
   @media screen and (max-width: 767px) {
     width: 161px;
     height: 44px;
@@ -356,10 +369,4 @@
     margin-left: 15px;
     margin-bottom: 165px;
   }
-  background: var(--white-color);
-  color: var(--accent-primary);
-  border-radius: 22px;
-  border: none;
-  transition: background-color var(--animation-duration) var(--timing-function);
-  display: block;
 }
