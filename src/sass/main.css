@@ -553,11 +553,10 @@ img {
 }
 
 .footer-contact__text {
-  font-family: DM Sans;
-  font-style: normal;
-  font-weight: 700;
   font-size: 12px;
-  line-height: 186%;
+  line-height: 1.86;
+  letter-spacing: 0;
+  font-weight: 700;
   text-align: right;
   color: var(--text-dark);
 }
@@ -591,10 +590,10 @@ img {
 .footer-copyright__text {
   width: 150px;
   margin: 0 auto;
-  font-style: normal;
-  font-weight: bold;
   font-size: 14px;
-  line-height: 152%;
+  line-height: 1.52;
+  letter-spacing: 0;
+  font-weight: 700;
   text-align: center;
   color: var(--text-light);
 }
