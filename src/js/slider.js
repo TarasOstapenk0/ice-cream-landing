@@ -11,11 +11,15 @@ const swiper = new Swiper('.swiper', {
   autoHeight: true,
 
   autoplay: {
-    delay: 4000,
+    delay: 5500,
   },
   
   speed: 1000,
 
   simulateTouch: true,
+
+  grabCursor: true,
+
+  spaceBetween: 30,
 
 });
