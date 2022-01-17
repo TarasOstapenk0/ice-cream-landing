@@ -38,34 +38,35 @@
             Aliquam erat volutpat. Aenean accumsan.
           </p>
         </div>
-        <button class="about__button" type="button">Read more</button>
+        <button class="about__button" type="button" data-modal-open-about>Read more</button>
       </div>
     </div>
   </div>
 
+  <!-- Modal -->
   <div class="backdrop is-hidden" data-modal-about>
-    <div class="modal about__modal">
-      <button class="modal__close-button" type="button" data-modal-close-about>
-        <svg width="18" height="18" class="modal__icon-about">
-          <use href=""></use>
+    <div class="modal-about">
+      <button class="modal-about__close-button" type="button" data-modal-close-about>
+        <svg class="modal-about__icon-close">
+          <use href="./images/sprites.svg#about-icon-close"></use>
         </svg>
       </button>
-      <h2 class="title modal__title">The Science of Ice Cream</h2>
-      <h3 class="subtitle modal__subtitle">How is ice cream made?</h3>
-      <p class="modal__text">
+      <h2 class="title modal-about__title">The Science of <br />Ice Cream</h2>
+      <h3 class="subtitle modal-about__subtitle">How is ice cream made?</h3>
+      <p class="modal-about__text">
         To transform cream (and milk) into ice cream, you add sugar, flavorings, and sometimes egg
         yolk and then chill, churn, and freeze the mixture. All of this happens in three distinct
         steps.
       </p>
-      <h3 class="subtitle modal__subtitle">Mixing</h3>
-      <p class="modal__text">
+      <h3 class="subtitle modal-about__subtitle">Mixing</h3>
+      <p class="modal-about__text">
         First, milk, cream, and sugar are heated until the sugar dissolves. The mixture is cooled,
         and then flavorings are added. For a richer-tasting custard-based ice cream, also known as
         French-style, the hot cream-sugar mixture is whisked into egg yolks and then returned to the
         heat to thicken the egg proteins and kill any bacteria.
       </p>
-      <h3 class="subtitle modal__subtitle">Freezing</h3>
-      <p class="modal__text">
+      <h3 class="subtitle modal-about__subtitle">Freezing</h3>
+      <p class="modal-about__text">
         Next, the liquid ice cream goes into an ice cream machine. In the machine’s churn (a
         container with chilled walls and a mixing paddle), the mixture is stirred as it freezes
         until it’s as thick as softly whipped cream.
