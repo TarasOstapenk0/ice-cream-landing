@@ -10,20 +10,15 @@
 @import './utils/base';
 @import './utils/visually-hidden';
 
-@import './layout/footer';
 @import './utils/arrow';
-
 @import './utils/slider';
 
-
-
-
-@import './header/burger';
-@import './header/header';
+@import './burger';
+@import './header';
 @import './hero';
 @import './advantages';
 @import './contact';
-@import './layout/prod';
+@import './prod';
 
 @import './clients';
-
+@import './footer';
