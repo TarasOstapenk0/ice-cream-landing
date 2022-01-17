@@ -1,26 +1,79 @@
 .section-contact {
   background-color: var(--bg-secondary);
-  width: 1280px;
-}
-.container {
-  display: flex;
-  justify-content: center;
+  //   width: 1280px;
+  height: 100%;
 
+  @media screen and (min-width: 1280px) {
+    background-image: url('../images/contact-desk-bg-1x.png');
+    background-repeat: no-repeat;
+    @media screen and (min-device-pixel-ratio: 2),
+      (min-resolution: 192dpi),
+      (min-resolution: 2dppx) {
+      background-image: url('../images/contact-desk-bg-2x.png');
+    }
+  }
+}
+
+.contact-shift {
+  margin-top: -84px;
+  @media screen and (min-width: 768px) {
+    margin-top: -78px;
+  }
+  @media screen and (min-width: 1280px) {
+    margin-top: -102px;
+  }
+}
+.contact-wrap {
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  align-items: center;
   width: 100%;
+
+  @media screen and (max-width: 767px) {
+    flex-direction: column;
+  }
 }
 
 .container-contact {
-  width: 330px;
-  height: 572px;
-  margin-left: 30px;
-
-  padding-top: 51px;
-  padding-left: 43px;
-  padding-bottom: 62px;
-
   background: #ffffff;
   box-shadow: 0px 8px 30px rgba(212, 20, 67, 0.1);
   border-radius: 24px;
+
+  @media screen and (max-width: 767px) {
+    width: 220px;
+    height: 427px;
+    padding-top: 43px;
+    padding-left: 20px;
+    padding-bottom: 43px;
+
+    &:not(:last-child) {
+      margin-bottom: 20px;
+    }
+  }
+
+  @media screen and (min-width: 768px) {
+    width: 220px;
+    height: 544px;
+
+    padding-top: 50px;
+    padding-left: 31px;
+    padding-bottom: 50px;
+
+    &:not(:first-child) {
+      margin-left: 20px;
+    }
+  }
+
+  @media screen and (min-width: 1280px) {
+    width: 330px;
+    height: 572px;
+    margin-left: 30px;
+
+    padding-top: 51px;
+    padding-left: 43px;
+    padding-bottom: 62px;
+  }
 }
 
 .contact-title {
@@ -28,103 +81,251 @@
   justify-content: center;
   align-items: center;
 
-  width: 73px;
-  height: 28px;
-
   background: var(--accent-yellow);
-  border-radius: 6px;
-  text-align: center;
-  margin-bottom: 32px;
+  border-radius: 4px;
 
   color: var(--white-color);
+
+  @media screen and (max-width: 767px) {
+    width: 80px;
+    height: 16px;
+
+    margin-bottom: 25px;
+  }
+  @media screen and (min-width: 768px) {
+    width: 73px;
+    height: 28px;
+
+    margin-bottom: 30px;
+  }
+
+  @media screen and (min-width: 1280px) {
+    width: 73px;
+    height: 28px;
+
+    margin-bottom: 32px;
+  }
 }
 .contact-title_heading {
   display: flex;
   justify-content: center;
   align-items: center;
-  width: 138px;
-  height: 28px;
-  text-align: center;
-  margin-bottom: 32px;
-  background: var(--accent-green);
-  border-radius: 6px;
-  color: var(--white-color);
+  @media screen and (max-width: 767px) {
+    width: 130px;
+    height: 16px;
+    background: var(--accent-green);
+    border-radius: 4px;
+
+    margin-bottom: 25px;
+
+    color: var(--white-color);
+  }
+  @media screen and (min-width: 768px) {
+    width: 138px;
+    height: 28px;
+    text-align: center;
+    margin-bottom: 32px;
+    background: var(--accent-green);
+    border-radius: 6px;
+    color: var(--white-color);
+  }
 }
 
 .contact-location {
-  margin-bottom: 10px;
-  @include font(16px, 1.16, 0.04, 500);
-
+  @media screen and (max-width: 767px) {
+    @include font(16px, 1.12, 0.04, 500);
+    margin-bottom: 10px;
+  }
+  @media screen and (min-width: 768px) {
+    @include font(16px, 1.14, 0.04, 500);
+    margin-bottom: 14px;
+  }
+  @media screen and (min-width: 1280px) {
+    @include font(16px, 1.16, 0.04, 500);
+    margin-bottom: 10px;
+  }
   color: var(--text-dark);
 }
 
 .contact-text {
-  display: block;
-  padding-bottom: 32px;
   width: 244px;
-  @include font(16px, 1.14, 0.04, 500);
+  display: block;
   color: var(--text-light);
-
   border-bottom: 1px solid var(--contact-border);
+
+  @media screen and (max-width: 767px) {
+    @include font(12px, 1.83, 0, 500);
+    width: 179px;
+    padding-bottom: 25px;
+  }
+  @media screen and (min-width: 768px) {
+    @include font(14px, 1.64, 0, 500);
+    width: 145px;
+    padding-bottom: 30px;
+  }
+  @media screen and (min-width: 1280px) {
+    @include font(16px, 1.14, 0, 500);
+    width: 243px;
+    padding-bottom: 32px;
+  }
 }
 
 .contact-date-time {
-  height: 30px;
-  @include font(16px, 1.16, 0.04, 500);
-  color: var(--text-dark);
-}
-.contact-date-day {
-  height: 30px;
-  margin-bottom: 15px;
+  @media screen and (max-width: 767px) {
+    @include font(12px, 1.83, 0, 500);
+    height: 23px;
+    margin-bottom: 10px;
+  }
+  @media screen and (min-width: 768px) {
+    @include font(14px, 1.85, 0, 500);
+    height: 26px;
+    margin-bottom: 15px;
+  }
+  @media screen and (min-width: 1280px) {
+    @include font(16px, 1.87, 0, 500);
+    height: 30px;
+    margin-bottom: 15px;
+  }
 
   margin-top: -2px;
-  @include font(16px, 1.16, 0, 500);
 
   color: var(--accent-secondary);
 }
+.contact-date-day {
+  @media screen and (max-width: 767px) {
+    @include font(12px, 1.55, 0, 500);
+    height: 23px;
+  }
+  @media screen and (min-width: 768px) {
+    @include font(14px, 1.85, 0, 500);
+    height: 26px;
+  }
+  @media screen and (min-width: 1280px) {
+    @include font(16px, 1.87, 0, 500);
+    height: 30px;
+  }
+
+  color: var(--text-dark);
+}
 .contact-date {
-  margin-top: 32px;
-  margin-bottom: 32px;
+  @media screen and (max-width: 767px) {
+    margin-top: 25px;
+    margin-bottom: 25px;
+  }
+  @media screen and (min-width: 768px) {
+    margin-top: 30px;
+    margin-bottom: 30px;
+  }
+  @media screen and (min-width: 1280px) {
+    margin-top: 32px;
+    margin-bottom: 32px;
+  }
 }
 
 .contact-adress {
   border-top: 1px solid var(--contact-border);
-  padding-top: 32px;
+
+  @media screen and (max-width: 767px) {
+    width: 179px;
+    padding-top: 25px;
+  }
+  @media screen and (min-width: 768px) {
+    width: 157px;
+    padding-top: 32px;
+  }
+  @media screen and (min-width: 1280px) {
+    width: 244px;
+    padding-top: 32px;
+  }
 }
 
 .contact-adress_tel {
-  margin-bottom: 10px;
+  @media screen and (max-width: 767px) {
+    @include font(12px, 1.5, 0, 500);
+    margin-bottom: 0px;
+  }
+  @media screen and (min-width: 768px) {
+    @include font(14px, 1.85, 0, 500);
+
+    margin-bottom: 0px;
+  }
+  @media screen and (min-width: 1280px) {
+    @include font(16px, 1.14, 0, 500);
+    margin-bottom: 12px;
+  }
 }
 
 .contact-link {
-  width: 243px;
-  height: 50px;
+  @media screen and (max-width: 767px) {
+    @include font(12px, 1.5, 0, 500);
+    height: 23px;
+    margin-bottom: 10px;
+  }
+  @media screen and (min-width: 768px) {
+    @include font(14px, 1.85, 0, 500);
+    height: 26px;
+    margin-bottom: 15px;
+  }
+  @media screen and (min-width: 1280px) {
+    width: 243px;
+    height: 50px;
 
-  @include font(16px, 1.14, 0, 500);
+    @include font(16px, 1.14, 0, 500);
+  }
 
   color: var(--text-light);
-  margin-top: 20px;
+  //   margin-top: 20px;
 }
 
 .contact-btn {
-  display: flex;
-  justify-content: center;
+  @media screen and (max-width: 767px) {
+    margin-top: 54px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+  }
+  @media screen and (min-width: 768px) {
+    display: flex;
+    justify-content: center;
+    margin-top: 81px;
+  }
+  @media screen and (min-width: 1280px) {
+    display: flex;
+    justify-content: center;
 
-  margin-top: 86px;
+    margin-top: 86px;
+  }
+
+  //   display: flex;
+  //   justify-content: center;
+
+  //   margin-top: 86px;
 }
-.contact-btn_main {
-  margin-right: auto;
-  margin-left: auto;
-}
+// .contact-btn_main {
+//   margin-right: auto;
+//   margin-left: auto;
+// }
 
 .contact-btn_location {
-  @include font(16px, 1.31, 0, 700);
-
-  width: 198px;
-  height: 44px;
+  @media screen and (max-width: 767px) {
+    width: 161px;
+    height: 44px;
+    margin-bottom: 10px;
+    margin-right: auto;
+    margin-left: auto;
+  }
+  @media screen and (min-width: 768px) {
+    width: 191px;
+    height: 44px;
+    margin-right: 15px;
+  }
+  @media screen and (min-width: 1280px) {
+    @include font(16px, 1.31, 0, 700);
+    width: 198px;
+    height: 44px;
+    display: block;
+  }
   cursor: pointer;
-  margin-left: 15px;
-  display: block;
   background: var(--button-contact);
   color: var(--white-color);
   border-radius: 22px;
@@ -133,17 +334,32 @@
   transition: background-color var(--animation-duration) var(--timing-function);
 }
 .contact-btn_ranchize {
-  @include font(16px, 1.31, 0, 700);
-  width: 198px;
-  height: 44px;
-  cursor: pointer;
-  margin-left: 15px;
-
+  @media screen and (max-width: 767px) {
+    width: 161px;
+    height: 44px;
+    margin-bottom: 10px;
+    margin-right: auto;
+    margin-left: auto;
+    margin-bottom: 113px;
+  }
+  @media screen and (min-width: 768px) {
+    width: 191px;
+    height: 44px;
+    margin-bottom: 158px;
+    margin-left: 15px;
+  }
+  @media screen and (min-width: 1280px) {
+    @include font(16px, 1.31, 0, 700);
+    width: 198px;
+    height: 44px;
+    cursor: pointer;
+    margin-left: 15px;
+    margin-bottom: 165px;
+  }
   background: var(--white-color);
   color: var(--accent-primary);
   border-radius: 22px;
   border: none;
   transition: background-color var(--animation-duration) var(--timing-function);
-
   display: block;
 }
