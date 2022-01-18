@@ -40,6 +40,7 @@
   }
 }
 .modal-buynow__header {
+  text-align: center;
   @include font(10px, 1.15, 0.03em, 700);
   color: var(--text-dark);
   margin-bottom: 12px;
@@ -89,7 +90,7 @@
 }
 .order__label {
   margin-bottom: 4px;
-  color: var(--text-light);
+  color: var(--text-dark);
   font-size: 12px;
 }
 .order__input {
@@ -151,7 +152,7 @@
 
 .order__policy {
   @include font(7px, 1.5, 0.03em, 700);
-  color: var(--text-light);
+  color: var(--text-dark);
   display: flex;
   justify-content: center;
   align-items: center;
@@ -206,7 +207,7 @@
 .order__btm {
   background: var(--accent-primary);
   box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.15);
-  border-radius: 4px;
+  border-radius: 22px;
   border: 0;
   width: 150px;
   height: 37.5px;
