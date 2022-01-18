@@ -10,9 +10,9 @@
   transition-property: opacity, visibility;
   transition-duration: var(--transition-time), var(--transition-time);
   transition-timing-function: var(--cubic-bezier), var(--cubic-bezier);
-  &.is-hidden .modal-buynow {
-    transform: scale(3) translate(0) rotate(360deg);
-  }
+  // &.is-hidden .modal-buynow {
+  //   transform: scale(3) translate(0);
+  // }
 }
 
 .is-hidden {
