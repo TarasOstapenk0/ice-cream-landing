@@ -66,11 +66,14 @@
 
 .adv-list__title {
   @include font(36px, 1.14, 0.04em, 400);
+  text-transform: uppercase;
     @media screen and (min-width: 768px) {
       @include font(48px, 1.14, 0.04em, 400);
+      text-transform: none;
     } 
     @media screen and (min-width: 1280px) {
       @include font(58px, 1.14, 0.04em, 400);
+      text-transform: none;
     } 
   color: var(--accent-primary);
   font-family: Titan One;
