@@ -11,4 +11,4 @@ const e=new Swiper(".swiper",{loop:!0,pagination:{el:".swiper-pagination",clicka
 },{}],"Focm":[function(require,module,exports) {
 "use strict";require("./js/slider.js"),require("./js/menu.js"),require("./js/arrow.js"),require("./sass/main.scss"),require("./js/modal-about.js");
 },{"./js/slider.js":"wzuc","./js/menu.js":"i0CD","./js/arrow.js":"Dcx1","./sass/main.scss":"clu1","./js/modal-about.js":"Y6wa"}]},{},["Focm"], null)
-//# sourceMappingURL=/ice-cream-landing/src.6482e650.js.map
+//# sourceMappingURL=/ice-cream-landing/src.94272f36.js.map
