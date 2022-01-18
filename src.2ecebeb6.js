@@ -5,10 +5,10 @@ parcelRequire=function(e,r,t,n){var i,o="function"==typeof parcelRequire&&parcel
 },{}],"wzuc":[function(require,module,exports) {
 const e=new Swiper(".swiper",{loop:!0,pagination:{el:".swiper-pagination",clickable:!0},autoHeight:!0,autoplay:{delay:5500},speed:1e3,simulateTouch:!0,grabCursor:!0,spaceBetween:30});
 },{}],"i0CD":[function(require,module,exports) {
-(()=>{const e={openMenuBtn:document.querySelector(".open-menu-button"),closeMenuBtn:document.querySelector(".close-menu-button"),menu:document.querySelector(".mob-menu")};function n(){e.menu.classList.toggle("is-hidden")}e.openMenuBtn.addEventListener("click",n),e.closeMenuBtn.addEventListener("click",n)})();
+(()=>{const e=document.querySelector(".js-menu-container"),t=document.querySelector(".js-open-menu"),o=document.querySelector(".js-close-menu"),n=()=>{const o="true"===t.getAttribute("aria-expanded")||!1;t.setAttribute("aria-expanded",!o),e.classList.toggle("is-open"),bodyScrollLock[o?"enableBodyScroll":"disableBodyScroll"](document.body)};t.addEventListener("click",n),o.addEventListener("click",n),window.matchMedia("(min-width: 768px)").addEventListener("change",o=>{o.matches&&(e.classList.remove("is-open"),t.setAttribute("aria-expanded",!1),bodyScrollLock.enableBodyScroll(document.body))})})();
 },{}],"Dcx1":[function(require,module,exports) {
 !function(){"use strict";var e=document.querySelector(".scrollup");window.addEventListener("scroll",function(){var t=window.pageYOffset,o=document.documentElement.clientHeight;t>o&&e.classList.add("scrollup-show"),t<o&&e.classList.remove("scrollup-show")}),e.addEventListener("click",function e(){window.pageYOffset>0&&(window.scrollBy(0,-80),setTimeout(e,0))})}();
 },{}],"Focm":[function(require,module,exports) {
 "use strict";require("./sass/main.scss"),require("./js/modal-about.js"),require("./js/slider.js"),require("./js/menu.js"),require("./js/arrow.js");
 },{"./sass/main.scss":"clu1","./js/modal-about.js":"Y6wa","./js/slider.js":"wzuc","./js/menu.js":"i0CD","./js/arrow.js":"Dcx1"}]},{},["Focm"], null)
-//# sourceMappingURL=/ice-cream-landing/src.14b15909.js.map
+//# sourceMappingURL=/ice-cream-landing/src.2ecebeb6.js.map
