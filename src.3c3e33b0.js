@@ -6,7 +6,11 @@ const e=new Swiper(".swiper",{loop:!0,pagination:{el:".swiper-pagination",clicka
 (()=>{const e=document.querySelector(".js-menu-container"),t=document.querySelector(".js-open-menu"),o=document.querySelector(".js-close-menu"),n=()=>{const o="true"===t.getAttribute("aria-expanded")||!1;t.setAttribute("aria-expanded",!o),e.classList.toggle("is-open"),bodyScrollLock[o?"enableBodyScroll":"disableBodyScroll"](document.body)};t.addEventListener("click",n),o.addEventListener("click",n),window.matchMedia("(min-width: 768px)").addEventListener("change",o=>{o.matches&&(e.classList.remove("is-open"),t.setAttribute("aria-expanded",!1),bodyScrollLock.enableBodyScroll(document.body))})})();
 },{}],"Dcx1":[function(require,module,exports) {
 !function(){"use strict";var e=document.querySelector(".scrollup");window.addEventListener("scroll",function(){var t=window.pageYOffset,o=document.documentElement.clientHeight;t>o&&e.classList.add("scrollup-show"),t<o&&e.classList.remove("scrollup-show")}),e.addEventListener("click",function e(){window.pageYOffset>0&&(window.scrollBy(0,-80),setTimeout(e,0))})}();
+},{}],"n7ip":[function(require,module,exports) {
+(()=>{const e={openModalBtn:document.querySelector("[data-buynow-open]"),closeModalBtn:document.querySelector("[data-buynow-close]"),modal:document.querySelector("[data-buynow]")};function o(){e.modal.classList.toggle("is-hidden")}e.openModalBtn.addEventListener("click",o),e.closeModalBtn.addEventListener("click",o)})();
+},{}],"wkSI":[function(require,module,exports) {
+(()=>{const e={openModalBtn:document.querySelector("[data-franchise-open]"),closeModalBtn:document.querySelector("[data-franchise-close]"),modal:document.querySelector("[data-franchise]")};function n(){e.modal.classList.toggle("is-hidden")}e.openModalBtn.addEventListener("click",n),e.closeModalBtn.addEventListener("click",n)})();
 },{}],"Focm":[function(require,module,exports) {
-"use strict";require("./sass/main.scss"),require("./js/slider.js"),require("./js/menu.js"),require("./js/arrow.js");
-},{"./sass/main.scss":"clu1","./js/slider.js":"wzuc","./js/menu.js":"i0CD","./js/arrow.js":"Dcx1"}]},{},["Focm"], null)
-//# sourceMappingURL=/ice-cream-landing/src.6a4f46d7.js.map
+"use strict";require("./sass/main.scss"),require("./js/slider.js"),require("./js/menu.js"),require("./js/arrow.js"),require("./js/buynow.js"),require("./js/franchise");
+},{"./sass/main.scss":"clu1","./js/slider.js":"wzuc","./js/menu.js":"i0CD","./js/arrow.js":"Dcx1","./js/buynow.js":"n7ip","./js/franchise":"wkSI"}]},{},["Focm"], null)
+//# sourceMappingURL=/ice-cream-landing/src.3c3e33b0.js.map
