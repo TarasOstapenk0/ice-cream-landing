@@ -107,7 +107,7 @@
     margin-bottom: 32px;
   }
 }
-.contact-title_heading {
+.contact-title__heading {
   display: flex;
   justify-content: center;
   align-items: center;
@@ -156,7 +156,7 @@
   border-bottom: 1px solid var(--contact-border);
 
   @media screen and (max-width: 767px) {
-    @include font(12px, 1.83, 0, 500);
+    @include font(12px, 1.5, 0, 500);
     width: 179px;
     padding-bottom: 25px;
   }
@@ -166,7 +166,7 @@
     padding-bottom: 30px;
   }
   @media screen and (min-width: 1280px) {
-    @include font(16px, 1.14, 0, 500);
+    @include font(16px, 1.81, 0, 500);
     width: 243px;
     padding-bottom: 32px;
   }
@@ -241,7 +241,7 @@
   }
 }
 
-.contact-adress_tel {
+.contact-adress__tel {
   @media screen and (max-width: 767px) {
     @include font(12px, 1.5, 0, 500);
     margin-bottom: 0px;
@@ -253,7 +253,7 @@
   }
   @media screen and (min-width: 1280px) {
     @include font(16px, 1.14, 0, 500);
-    margin-bottom: 12px;
+    margin-bottom: 13px;
   }
 }
 
@@ -303,12 +303,12 @@
 
   //   margin-top: 86px;
 }
-// .contact-btn_main {
+// .contact-btn__main {
 //   margin-right: auto;
 //   margin-left: auto;
 // }
 
-.contact-btn_location {
+.contact-btn__location {
   cursor: pointer;
   background: var(--button-contact);
   color: var(--white-color);
@@ -334,7 +334,7 @@
     display: block;
   }
 }
-.contact-btn_franchize {
+.contact-btn__franchize {
   background: var(--white-color);
   color: var(--accent-primary);
   border-radius: 22px;
