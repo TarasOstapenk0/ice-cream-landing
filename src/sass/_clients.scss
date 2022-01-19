@@ -53,7 +53,6 @@
     left: 50%;
     transform: translate(-50%);
     bottom: -30px;
-    cursor: pointer;
 
     content: '';
     width: 4px;
@@ -74,6 +73,26 @@
 
   &:hover::after {
     box-shadow: -18px 0 var(--slider), 18px 0 var(--slider);
+  }
+
+  &::before {
+    position: absolute;
+    left: 50%;
+    transform: translate(-50%);
+    bottom: -36px;
+    cursor: pointer;
+
+    content: '';
+    width: 60px;
+    height: 18px;
+
+    @media screen and (min-width: 768px) {
+      bottom: -30px;
+    }
+
+    @media screen and (min-width: 1280px) {
+      bottom: -22px;
+    }
   }
 }
 
