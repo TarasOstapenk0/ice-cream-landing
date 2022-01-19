@@ -7,7 +7,7 @@ import './js/buynow.js';
 import './js/buynow-mob.js';
 import './js/franchise.js';
 
-import './js/buynow-mob';
+import './js/buynow-mob.js';
 
 // LOCATIONS
 import './js/locations.js';
