@@ -1843,6 +1843,7 @@ button.swiper-pagination-bullet {
 }
 
 .hero-links__product-link:hover, .hero-links__product-link:focus {
+  color: var(--white-color);
   background-color: var(--hover-button-dark);
 }
 
@@ -1862,6 +1863,7 @@ button.swiper-pagination-bullet {
 }
 
 .hero-links__how-link:hover, .hero-links__how-link:focus {
+  color: var(--accent-primary);
   background-color: var(--hover-button-light);
 }
 
