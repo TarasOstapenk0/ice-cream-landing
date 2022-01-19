@@ -1,6 +1,6 @@
 import './sass/main.scss';
 
-import './js/counter.js';
+import './js/counter-hero.js';
 import './js/slider.js';
 import './js/menu.js';
 import './js/arrow.js';
