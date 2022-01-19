@@ -3,20 +3,27 @@
 //   z-index: 100;
 //   position: absolute;
 //   overflow: hidden;
+//   top: 0;
+//   left: 0;
 //   width: 100vw;
 //   height: 100vh;
-//   background-color: rgba(0, 0, 0, 0.2);
+//   background-color: rgba(0, 0, 0, 0.8);
 //   opacity: 0;
+//   visibility: 0;
 
 //   transition: opacity var(--transition-time) var(--cubic-bezier);
 //   @media screen and (min-width: 1279px) {
 //     display: none;
 //   }
+//   &.open {
+//     opacity: 1;
+//     visibility: visible;
+//   }
 // }
 
-// .js-menu-container.is-open .burger__backdrop {
-//   opacity: 100%;
-// }
+.js-menu-container.is-open .burger__backdrop {
+  opacity: 100%;
+}
 
 .mob-menu {
   position: fixed;

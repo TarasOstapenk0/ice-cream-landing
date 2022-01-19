@@ -99,17 +99,20 @@ img {
     padding-left: 36px;
     padding-right: 36px;
     width: 768px;
-    &--adv{
+    &--adv {
       padding-right: 76px;
     }
   }
 
   @media screen and (min-width: 1280px) {
     width: 1280px;
-    &--adv{
+    &--adv {
       padding-left: 115px;
       padding-right: 115px;
     }
   }
 }
 
+body.lock {
+  overflow: hidden;
+}
