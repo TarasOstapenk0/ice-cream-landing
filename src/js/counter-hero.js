@@ -31,16 +31,10 @@ function animate(obj, initVal, lastVal, duration) {
 
 let text1 = document.getElementById('0101');
 let text2 = document.getElementById('0102');
-let text3 = document.getElementById('0103');
-let text4 = document.getElementById('0104');
-let text5 = document.getElementById('0105');
 
 const load = () => {
   animate(text1, 0, 16, 1500);
   animate(text2, 0, 23, 1500);
-  animate(text3, 0, 721, 1500);
-  animate(text4, 0, 21, 1500);
-  animate(text5, 0, 84, 1500);
 };
 window.addEventListener('load', function (event) {
   load();
