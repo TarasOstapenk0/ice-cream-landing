@@ -103,7 +103,7 @@
 .order__label {
   margin-bottom: 6px;
   color: var(--text-dark);
-
+  padding-left: 20px;
   font-size: 13px;
 }
 .order__input {
@@ -111,8 +111,9 @@
   height: 40px;
   border: 1px solid rgba(33, 33, 33, 0.2);
   border-radius: 24px;
-  padding-left: 42px;
+  padding-left: 35px;
   outline: none;
+  color: var(--accent-primary);
   transition-property: border-color;
   transition-duration: var(--transition-time);
   transition-timing-function: var(--cubic-bezier);
@@ -126,6 +127,7 @@
 
 .order__icon {
   position: relative;
+  margin-top: 3px;
 }
 
 .order__icon-img {
