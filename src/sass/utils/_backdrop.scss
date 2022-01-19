@@ -4,15 +4,12 @@
   left: 0;
   width: 100vw;
   height: 100vh;
-  background-color: rgba(0, 0, 0, 0.2);
+  background-color: rgba(0, 0, 0, 0.5);
   opacity: 1;
   visibility: visible;
   transition-property: opacity, visibility;
   transition-duration: var(--transition-time), var(--transition-time);
   transition-timing-function: var(--cubic-bezier), var(--cubic-bezier);
-  // &.is-hidden .modal-buynow {
-  //   transform: scale(3) translate(0);
-  // }
 }
 
 .is-hidden {
