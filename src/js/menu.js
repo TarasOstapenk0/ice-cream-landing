@@ -1,21 +1,3 @@
-// (() => {
-
-//  const refs = {
-
-//     openMenuBtn: document.querySelector('.open-menu-button'),
-//     closeMenuBtn: document.querySelector('.close-menu-button'),
-//     menu: document.querySelector('.mob-menu'),
-//   };
-
-//   refs.openMenuBtn.addEventListener('click', toggleMenu);
-//   refs.closeMenuBtn.addEventListener('click', toggleMenu);
-
-//   function toggleMenu() {
-//     refs.menu.classList.toggle('is-hidden');
-//   }
-
-// })();
-
 (() => {
   const mobileMenu = document.querySelector('.js-menu-container');
   const openMenuBtn = document.querySelector('.js-open-menu');
