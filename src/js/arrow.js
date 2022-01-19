@@ -3,7 +3,7 @@
 
   function trackScroll() {
     var scrolled = window.pageYOffset;
-    var coords = document.documentElement.clientHeight;
+    var coords = 200;
 
     if (scrolled > coords) {
       goTopBtn.classList.add('scrollup-show');
