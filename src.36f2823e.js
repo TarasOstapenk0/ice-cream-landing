@@ -17,6 +17,6 @@ const e=new Swiper(".swiper",{loop:!0,pagination:{el:".swiper-pagination",clicka
 },{}],"fZZ1":[function(require,module,exports) {
 (()=>{window.onclick=function(t){if(!t.target.matches(".contact-btn__locations")){var n,o=document.getElementsByClassName("dropdown-content");for(n=0;n<o.length;n++){var s=o[n];s.classList.contains("show")&&s.classList.remove("show")}}}})();
 },{}],"Focm":[function(require,module,exports) {
-"use strict";require("./sass/main.scss"),require("./js/slider.js"),require("./js/menu.js"),require("./js/arrow.js"),require("./js/buynow.js"),require("./js/buynow-mob.js"),require("./js/franchise.js"),require("./js/buynow-mob"),require("./js/locations.js"),require("./js/loc-menu.js");
-},{"./sass/main.scss":"clu1","./js/slider.js":"wzuc","./js/menu.js":"i0CD","./js/arrow.js":"Dcx1","./js/buynow.js":"n7ip","./js/buynow-mob.js":"c3nZ","./js/franchise.js":"wkSI","./js/buynow-mob":"c3nZ","./js/locations.js":"bcD2","./js/loc-menu.js":"fZZ1"}]},{},["Focm"], null)
-//# sourceMappingURL=/ice-cream-landing/src.cebf6b59.js.map
+"use strict";require("./sass/main.scss"),require("./js/slider.js"),require("./js/menu.js"),require("./js/arrow.js"),require("./js/buynow.js"),require("./js/buynow-mob.js"),require("./js/franchise.js"),require("./js/locations.js"),require("./js/loc-menu.js");
+},{"./sass/main.scss":"clu1","./js/slider.js":"wzuc","./js/menu.js":"i0CD","./js/arrow.js":"Dcx1","./js/buynow.js":"n7ip","./js/buynow-mob.js":"c3nZ","./js/franchise.js":"wkSI","./js/locations.js":"bcD2","./js/loc-menu.js":"fZZ1"}]},{},["Focm"], null)
+//# sourceMappingURL=/ice-cream-landing/src.36f2823e.js.map
