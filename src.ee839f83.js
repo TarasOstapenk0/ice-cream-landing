@@ -10,7 +10,11 @@ const e=new Swiper(".swiper",{loop:!0,pagination:{el:".swiper-pagination",clicka
 (()=>{const e={openModalBtn:document.querySelector("[data-buynow-open]"),closeModalBtn:document.querySelector("[data-buynow-close]"),modal:document.querySelector("[data-buynow]")};function o(){e.modal.classList.toggle("is-hidden")}e.openModalBtn.addEventListener("click",o),e.closeModalBtn.addEventListener("click",o)})();
 },{}],"wkSI":[function(require,module,exports) {
 (()=>{const e={openModalBtn:document.querySelector("[data-franchise-open]"),closeModalBtn:document.querySelector("[data-franchise-close]"),modal:document.querySelector("[data-franchise]")};function n(){e.modal.classList.toggle("is-hidden")}e.openModalBtn.addEventListener("click",n),e.closeModalBtn.addEventListener("click",n)})();
+},{}],"bcD2":[function(require,module,exports) {
+(()=>{const o={openModalBtn:document.querySelector("[data-locations-open]"),closeModalBtn:document.querySelector("[data-locations-close]"),modal:document.querySelector("[data-locations]")};function e(){o.modal.classList.toggle("is-hidden")}o.openModalBtn.addEventListener("click",e),o.closeModalBtn.addEventListener("click",e)})();
+},{}],"fZZ1":[function(require,module,exports) {
+(()=>{window.onclick=function(t){if(!t.target.matches(".contact-btn__locations")){var n,o=document.getElementsByClassName("dropdown-content");for(n=0;n<o.length;n++){var s=o[n];s.classList.contains("show")&&s.classList.remove("show")}}}})();
 },{}],"Focm":[function(require,module,exports) {
-"use strict";require("./sass/main.scss"),require("./js/slider.js"),require("./js/menu.js"),require("./js/arrow.js"),require("./js/buynow.js"),require("./js/franchise.js");
-},{"./sass/main.scss":"clu1","./js/slider.js":"wzuc","./js/menu.js":"i0CD","./js/arrow.js":"Dcx1","./js/buynow.js":"n7ip","./js/franchise.js":"wkSI"}]},{},["Focm"], null)
-//# sourceMappingURL=/ice-cream-landing/src.3cdd711f.js.map
+"use strict";require("./sass/main.scss"),require("./js/slider.js"),require("./js/menu.js"),require("./js/arrow.js"),require("./js/buynow.js"),require("./js/franchise.js"),require("./js/locations.js"),require("./js/loc-menu.js");
+},{"./sass/main.scss":"clu1","./js/slider.js":"wzuc","./js/menu.js":"i0CD","./js/arrow.js":"Dcx1","./js/buynow.js":"n7ip","./js/franchise.js":"wkSI","./js/locations.js":"bcD2","./js/loc-menu.js":"fZZ1"}]},{},["Focm"], null)
+//# sourceMappingURL=/ice-cream-landing/src.ee839f83.js.map
