@@ -21,7 +21,7 @@
   left: 50%;
   width: 320px;
   height: 553px;
-  // background-color: var(--bg-hero-prod);
+  backdrop-filter: blur(8px);
   background-image: linear-gradient(90deg, rgba(255, 221, 225, 0.3) 35%, var(--white-color) 100%);
   box-shadow: 0 8px 30px var(--contact-border);
   border-radius: 24px;
@@ -89,6 +89,7 @@
 .franchise__label {
   margin-bottom: 4px;
   color: var(--text-dark);
+  padding-left: 20px;
   font-size: 12px;
 }
 .franchise__input {
@@ -96,8 +97,9 @@
   height: 30px;
   border: 1px solid rgba(33, 33, 33, 0.2);
   border-radius: 24px;
-  padding-left: 42px;
+  padding-left: 35px;
   outline: none;
+  color: var(--accent-primary);
   transition-property: border-color;
   transition-duration: var(--transition-time);
   transition-timing-function: var(--cubic-bezier);
@@ -111,6 +113,7 @@
 
 .franchise__icon {
   position: relative;
+  margin-top: 3px;
 }
 
 .franchise__icon-img {
