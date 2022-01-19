@@ -19,4 +19,4 @@ const e=new Swiper(".swiper",{loop:!0,pagination:{el:".swiper-pagination",clicka
 },{}],"Focm":[function(require,module,exports) {
 "use strict";require("./sass/main.scss"),require("./js/slider.js"),require("./js/menu.js"),require("./js/arrow.js"),require("./js/buynow.js"),require("./js/buynow-mob.js"),require("./js/franchise.js"),require("./js/locations.js"),require("./js/loc-menu.js");
 },{"./sass/main.scss":"clu1","./js/slider.js":"wzuc","./js/menu.js":"i0CD","./js/arrow.js":"Dcx1","./js/buynow.js":"n7ip","./js/buynow-mob.js":"c3nZ","./js/franchise.js":"wkSI","./js/locations.js":"bcD2","./js/loc-menu.js":"fZZ1"}]},{},["Focm"], null)
-//# sourceMappingURL=/ice-cream-landing/src.97446b5b.js.map
+//# sourceMappingURL=/ice-cream-landing/src.eeee7626.js.map
