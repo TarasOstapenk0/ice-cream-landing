@@ -190,6 +190,7 @@
 
   &:hover,
   &:focus {
+    color: var(--white-color);
     background-color: var(--hover-button-dark);
   }
 
@@ -208,6 +209,7 @@
 
   &:hover,
   &:focus {
+    color: var(--accent-primary);
     background-color: var(--hover-button-light);
   }
 
