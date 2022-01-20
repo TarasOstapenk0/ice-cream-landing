@@ -64,13 +64,13 @@
       </ul>
       <div class="contact-btn">
         <div class="dropdown">
-          <button onclick="myFunction()" type="button" class="contact-btn__locations">
+          <button type="button" class="contact-btn__locations">
             Our location<span class="contact-simbol"> &gt;</span>
           </button>
-          <div id="myDropdown" class="dropdown-content">
-            <a href="#" onclick="return false;" data-locations-open>Chicago</a>
-            <a href="#" onclick="return false;">Los Angeles</a>
-            <a href="#" onclick="return false;">New York</a>
+          <div class="dropdown-content">
+            <a href="#" onclick="return false;" data-locations-open__chicago>Chicago</a>
+            <a href="#" onclick="return false;" data-locations-open__los-angeles>Los Angeles</a>
+            <a href="#" onclick="return false;" data-locations-open__new-york>New York</a>
           </div>
         </div>
         <button type="submit" class="contact-btn__franchize" data-franchise-open>
@@ -79,22 +79,4 @@
       </div>
     </div>
   </div>
-  <script>
-    function myFunction() {
-      document.getElementById('myDropdown').classList.toggle('show');
-    }
-
-    window.onclick = function (event) {
-      if (!event.target.matches('.contact-btn__locations')) {
-        var dropdowns = document.getElementsByClassName('dropdown-content');
-        var i;
-        for (i = 0; i < dropdowns.length; i++) {
-          var openDropdown = dropdowns[i];
-          if (openDropdown.classList.contains('show')) {
-            openDropdown.classList.remove('show');
-          }
-        }
-      }
-    };
-  </script>
 </section>

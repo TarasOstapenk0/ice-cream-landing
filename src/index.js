@@ -11,4 +11,3 @@ import './js/counter-adv.js';
 
 // LOCATIONS
 import './js/locations.js';
-import './js/loc-menu.js';
